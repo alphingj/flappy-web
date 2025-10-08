@@ -1,0 +1,27 @@
+.ad-banner-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 50px; /* Prevent layout shift while ad loads */
+  max-width: 970px; /* Common leaderboard ad width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Placeholder background */
+  border: 1px dashed #ccc;
+  color: #999;
+}
+
+.ad-banner-container::before {
+    content: "Ad Placeholder";
+    font-style: italic;
+}
+
+.adsbygoogle[data-ad-status="filled"] {
+    background-color: transparent;
+    border: none;
+}
+
+.adsbygoogle[data-ad-status="filled"]::before {
+    content: "";
+}

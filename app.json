@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Custom Flappy Creator",
+    "slug": "custom-flappy-creator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.flappycreator.app"
+    },
+    "android": {
+      "package": "com.flappycreator.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-dev-client",
+      [
+        "expo-splash-screen",
+        {
+          "resizeMode": "contain",
+          "backgroundColor": "#FAFAFA"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "gradleVersion": "8.6",
+            "kotlinVersion": "1.9.22"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "displayName": "Custom Flappy Creator"
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-4688177552487842~7113648460"
+  }
+}

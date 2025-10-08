@@ -1,0 +1,232 @@
+
+.play-root-container {
+    display: flex;
+    flex: 1;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.play-game-screen {
+    background-color: #87CEEB;
+    overflow: hidden;
+    position: relative;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play-center-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.play-loading-text {
+    margin-top: 16px;
+    font-size: 18px;
+    color: var(--text-medium);
+}
+
+.play-score {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin-top: 100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.play-game-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+
+.play-button {
+    margin-top: 32px;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-text {
+    margin-top: 16px;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+}
+
+.play-game-over-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    gap: 12px;
+}
+
+.play-game-over-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.play-medal-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+}
+
+.play-medal-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.play-final-score {
+    font-size: 24px;
+    color: var(--text-medium);
+    margin: 0;
+}
+
+.play-high-score {
+    font-size: 18px;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.play-new-high-score-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38A169;
+    margin: 0;
+}
+
+.play-score-submitted-text {
+    font-size: 16px;
+    color: #38A169;
+    font-style: italic;
+    margin: 0;
+}
+
+.play-input {
+    background-color: white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.play-leaderboard-container {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
+    margin: 4px 0;
+}
+
+.play-leaderboard-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-medium);
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+
+.play-score-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+}
+
+.play-score-rank {
+    font-size: 16px;
+    color: var(--text-light);
+    font-weight: bold;
+    flex: 1;
+}
+
+.play-score-name {
+    font-size: 16px;
+    color: var(--text-medium);
+    flex: 4;
+    text-align: left;
+    padding: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.play-score-value {
+    font-size: 16px;
+    color: var(--text-dark);
+    font-weight: bold;
+    flex: 2;
+    text-align: right;
+}
+
+.play-no-scores-text {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    margin: 0;
+}
+
+.play-restart-button,
+.play-secondary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: 16px;
+    gap: 12px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.play-restart-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.play-secondary-button {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 14px 24px; /* Adjust padding for border */
+}
+
+.play-game-over-ad-container {
+    width: 100%;
+}

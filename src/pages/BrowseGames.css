@@ -1,0 +1,98 @@
+.browse-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.browse-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    background-color: white;
+}
+
+.browse-back-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.browse-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.browse-sort-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 0;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.browse-sort-button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #F1F5F9;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-medium);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.browse-sort-button.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.browse-list-container {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.browse-loading {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.browse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.browse-empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    height: 100%;
+}
+.browse-empty-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-medium);
+    margin-top: 16px;
+}
+.browse-empty-subtext {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-top: 8px;
+    text-align: center;
+}

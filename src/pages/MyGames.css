@@ -1,0 +1,122 @@
+.my-games-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.my-games-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    background-color: white;
+}
+
+.my-games-back-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.my-games-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.my-games-list-container {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.my-games-input-container {
+    padding: 16px;
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.my-games-input {
+    background-color: white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 600px;
+}
+
+.my-games-input:disabled {
+    background-color: #f9fafb;
+    cursor: wait;
+}
+
+/* Spinner for both name loading and game fetching */
+.my-games-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: my-games-spin 1s ease-in-out infinite;
+}
+
+@keyframes my-games-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my-games-loading {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: var(--text-light);
+}
+
+.my-games-loading .my-games-spinner {
+    width: 32px; /* Larger spinner for main content loading */
+    height: 32px;
+}
+
+.my-games-loading p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.my-games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.my-games-empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: 20px;
+}
+
+.my-games-empty-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-medium);
+    margin-top: 16px;
+    text-align: center;
+}
